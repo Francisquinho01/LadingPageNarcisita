@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Planofundo from "./PlanoFundo/A1.png";
+import Planofundo from "./Planofundo/A1.png";
 
 const GlobalStyle = createGlobalStyle`
  * {
