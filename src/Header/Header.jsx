@@ -26,7 +26,7 @@ export default function Header() {
     <Wrap>
       <Bar>
         <Brand href="#inicio" onClick={close}>
-          <BrandTitle>Meu Espelho Quebrou</BrandTitle>
+          <BrandTitle>Meu Espelho Quebrou Na Mente de um Narcisita</BrandTitle>
           <BrandSub>Documentário Psicológico</BrandSub>
         </Brand>
 
@@ -139,14 +139,27 @@ const Brand = styled.a`
 `;
 
 const BrandTitle = styled.span`
-  color: #eaeaea;
-  letter-spacing: 3px;
-  font-weight: 650;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: #ffffff;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+
+  span {
+    color: #d11a1a;
+    text-shadow: 0 0 18px rgba(209, 26, 26, 0.6);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 `;
 
 const BrandSub = styled.span`
